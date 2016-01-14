@@ -1,0 +1,45 @@
+﻿     [
+        {
+            "Strength": 11,
+            "Endurance": 5,
+            "Dexterity": 33,
+            "name": "Player Stats"
+        },
+        {
+            "Strength": 14,
+            "Endurance": 15,
+            "Dexterity": 33,
+            "name": "Player Stats2"
+        },
+        {
+            "Strength": 16,
+            "Endurance": 125,
+            "Dexterity": 33,
+            "name": "Player Stats3"
+        },
+        {
+            "Strength": 6,
+            "Endurance": 15,
+            "Dexterity": 33,
+            "name": "Player Stats4"
+        },
+        {
+            "Strength": 44,
+            "Endurance": 15,
+            "Dexterity": 33,
+            "name": "Player Stats5"
+        },
+        {
+            "Strength": 33,
+            "Endurance": 15,
+            "Dexterity": 33,
+            "name": "Player Stats6"
+        },
+        {
+            "Strength": 66,
+            "Endurance": 15,
+            "Dexterity": 33,
+            "name": "Player Stats7"
+        }
+    ]
+

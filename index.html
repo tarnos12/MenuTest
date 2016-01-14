@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+    <title>Angular project</title>
+    <script src="js/libraries/angular.min.js"></script>
+    <link href="jasmine/lib/jasmine-2.4.1/jasmine.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <script src="jasmine/lib/jasmine-2.4.1/jasmine.js"></script>
+    <script src="jasmine/lib/jasmine-2.4.1/jasmine-html.js"></script>
+    <script src="jasmine/lib/jasmine-2.4.1/boot.js"></script>
+    <script src="jasmine/lib/jasmine-2.4.1/console.js"></script>
+    <script src="js/libraries/angular-mocks.js"></script>
+    <style type="text/css">
+        div.on{
+            background-color:green;
+        }
+        div.test{
+            height:200px;
+        }
+        .positionT{
+            position:absolute;
+            bottom:20%;
+            right:20%;
+        }
+        .positionR{
+            position:absolute;
+            bottom:40%;
+            right:50%;
+        }
+        .blockTest{
+            margin-bottom:5px;
+            display:block;
+        }
+        button{
+            width:100px;
+        }
+    </style>
+</head>
+
+<body ng-controller="PlayerStats">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                
+                <div ng-show="gameMenu.loadingScreen.state" ng-class="{on:gameMenu.loadingScreen.state}" class="test">
+                        
+                    <div ng-show="gameMenu.startMen.state">
+                        <div class="positionR">
+                            <button class="blockTest" ng-click="gameMenu.charSelect.toggle()" ng-class="{on:gameMenu.startMen.state}">Start</button>
+                        <button>Options</button>
+                        </div>
+                        
+                    </div>
+                    <div ng-show="gameMenu.charSelect.state">
+                        <div class="positionR">
+                        <button class="blockTest" ng-click="gameMenu.charCreate.toggle()">Save Slot 1</button>
+                        <button class="blockTest" ng-click="gameMenu.charCreate.toggle()">Save Slot 2</button>
+                        <button ng-click="gameMenu.charCreate.toggle()">Save Slot 3</button>
+                        </div>
+                        <button class="positionT" ng-click="gameMenu.charSelect.toggle()">Back</button>
+                    </div>
+                    <div ng-show="gameMenu.charCreate.state">
+                        <button class="positionR" disabled>Begin</button>
+                        <button class="positionT" ng-click="gameMenu.charCreate.toggle()">Back</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main app module-->
+    <script src="js/main.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/playerStats.js"></script>
+
+    <!-- Unit Test-->
+    <script src="test/unit/controllersSpec.js"></script>
+
+</body>
+</html>
