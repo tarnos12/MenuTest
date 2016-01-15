@@ -1,45 +1,21 @@
 ﻿     [
         {
-            "Strength": 11,
-            "Endurance": 5,
-            "Dexterity": 33,
-            "name": "Player Stats"
+            "Name": "Goku",
+            "Level": 100,
+            "Race": "Saiyajin",
+            "Description": "Main character in the series."
         },
         {
-            "Strength": 14,
-            "Endurance": 15,
-            "Dexterity": 33,
-            "name": "Player Stats2"
+            "Name": "Vegeta",
+            "Level": 95,
+            "Race": "Saiyajin",
+            "Description": "Goku's Rival."
         },
         {
-            "Strength": 16,
-            "Endurance": 125,
-            "Dexterity": 33,
-            "name": "Player Stats3"
-        },
-        {
-            "Strength": 6,
-            "Endurance": 15,
-            "Dexterity": 33,
-            "name": "Player Stats4"
-        },
-        {
-            "Strength": 44,
-            "Endurance": 15,
-            "Dexterity": 33,
-            "name": "Player Stats5"
-        },
-        {
-            "Strength": 33,
-            "Endurance": 15,
-            "Dexterity": 33,
-            "name": "Player Stats6"
-        },
-        {
-            "Strength": 66,
-            "Endurance": 15,
-            "Dexterity": 33,
-            "name": "Player Stats7"
+            "Name": "Piccolo",
+            "Level": 80,
+            "Race": "Namekian",
+            "Description": "Once known as Demon King(or something)"
         }
     ]
 

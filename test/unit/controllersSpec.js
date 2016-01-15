@@ -18,9 +18,9 @@
             ctrl = $controller('PlayerStats', { $scope: scope });
         }));
         it('should create "phones" model with 2 phones fetched from xhr', function () {
-            expect(scope.stats).toBeUndefined();
+            expect(scope.saveList).toBeUndefined();
             $httpBackend.flush();
 
-            expect(scope.stats).toEqual('test');
+            expect(scope.saveList).toEqual('test');
         });
     })});
